@@ -4,4 +4,4 @@ import Error from "../Pages/Error"
 import Sidebar from "../Componets/Sidebar"
 import Contact from "../Pages/Error.jsx"
 
-export { Home , Nav, Error, Sidebar, Contact}
+export { Home , Nav, Error, Sidebar, Contact }

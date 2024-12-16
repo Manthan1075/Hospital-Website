@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import {
   Menu,
   MenuOpen,
@@ -17,8 +17,9 @@ import {
 } from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
 
+
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleSidebar = () => {
@@ -35,6 +36,8 @@ const Sidebar = () => {
     { to: "/billing", value: "Billing", icon: <AccountBalanceWalletOutlined /> },
     { to: "/history", value: "History", icon: <History /> },
   ];
+
+  
 
   return (
     <>
