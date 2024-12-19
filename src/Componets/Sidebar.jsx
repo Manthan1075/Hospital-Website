@@ -42,7 +42,7 @@ const Sidebar = () => {
   return (
     <>
       <button
-        className="fixed top-2 left-3 z-10 p-3 bg-white rounded-full shadow-md hover:bg-blue-100 text-blue-600 transition-all"
+        className="fixed top-2 left-3 z-20 p-3 bg-white rounded-full shadow-md hover:bg-blue-100 text-blue-600 transition-all"
         onClick={toggleSidebar}
       >
         {isOpen ? <MenuOpen /> : <Menu />}
@@ -50,7 +50,7 @@ const Sidebar = () => {
 
 
       <div
-        className={`fixed top-0 left-0 h-screen bg-[whitesmoke] shadow-lg border-r-2 transition-all duration-300 ${isOpen ? "w-[16rem]" : "w-20"
+        className={`fixed top-0 left-0 h-screen bg-[whitesmoke] shadow-lg border-r-2 transition-all duration- z-10 ${isOpen ? "w-[16rem]" : "w-20"
           }`}
       >
         <div className={`flex items-center justify-center w-full  gap-4 p-4 border-b  shadow-md ${isOpen ? "block" : "opacity-0"}`}>
